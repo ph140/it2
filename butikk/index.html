@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <p id='demo'></p>
+
+    <script>
+      alert('hi');
+      var txt = document.getElementById('demo');
+      var d = new Date();
+      var time = d.getHours();
+      var svar = prompt('Vil du kjøpe mat i butikken? (j/n)');
+
+      if (svar == 'j' && 10<=time<18){
+        var belop = prompt('Butikken er [pen, Hvor mye penger vil du bruke?');
+        txt.innerHTML = time + 'kaffe';
+      }
+      else {
+        txt.innerHTML = 'Beklager, butikken er stengt idag.'
+      }
+
+    </script>
+
+  </body>
+</html>
